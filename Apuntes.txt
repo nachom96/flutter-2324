@@ -1,0 +1,5 @@
+dynamic: Puede devolver cualquier cosa, evitar usarlo
+
+final vs const = 
+const, crea una constante en el tiempo de construcción de la aplicación
+final, se asigna en tiempo de ejecución
