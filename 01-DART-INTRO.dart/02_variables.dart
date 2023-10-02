@@ -6,7 +6,7 @@ void main(){
   const List<String> abilities = ['Látigo cepa'];
   const sprites = <String>['treecko/front.png', 'treecko/battle.png'];
   
-  // dynamic == null
+  // dynamic == null // dynamic puede ser cualquier tipo de dato, intentar evitarlo
   dynamic errorMessage = 'Hola';
   errorMessage = true;
   errorMessage = [1,2,3,4,5,6];
