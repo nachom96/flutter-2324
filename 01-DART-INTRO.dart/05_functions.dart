@@ -3,6 +3,8 @@ void main(){
   print(greetEveryone());
   
   print('Suma: ${ addTwoNumbers(15, 15)}');
+
+  print( greetPerson(name: 'Kaladin', message: 'Hi'));
   
 }
 
@@ -14,5 +16,12 @@ int addTwoNumbersOptional(int a, [ int b = 0] ){
   
   // b ??= 0;
   return a + b;
+  
+}
+
+// Las llaves lo vuelven opcionales y con nombre
+String greetPerson( {required String name, String? message = 'Hola, '} ){
+  
+  return '$message, Kaladin';
   
 }
