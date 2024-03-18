@@ -1,7 +1,5 @@
 void main () {
   
-  // En un Set, los valores son únicos
-  
   final numbers = [1, 2, 3, 4, 5, 5, 5, 6, 7, 8, 8, 9, 10];
   
   print('List original $numbers');
@@ -14,6 +12,7 @@ void main () {
   final reversedNumbers = numbers.reversed;
   print('Iterable: $reversedNumbers');
   print('List: ${reversedNumbers.toList()}');
+    // En un Set, los valores son únicos
   print('Set: ${reversedNumbers.toSet()}');
   
   final numbersGreaterThan5 = numbers.where( (num) {
