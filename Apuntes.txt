@@ -5,9 +5,24 @@
 1- Apuntes pequeños:
 
 dynamic: Puede devolver cualquier cosa, evitar usarlo
+privado: Es algo visible solamente dentro de un scope / clase, eg: double _side = 30;
 
 final vs const
 const, crea una constante en el tiempo de construcción de la aplicación
 final, se asigna en tiempo de ejecución
+
+Definiciones y orden en la creación de un programa:
+
+    Definiciones y orden de creación:
+        - Clase: Es un modelo o plantilla que de fine las propiedades (atributos) y comportamientos (métodos) que sus instancias tendrán.
+        - Constructor: Es un método especial para inicializar la instancia de una clase, sirve principalmente para asignar valores iniciales.
+        - Instancia: Es un objeto creado a partir de una clase. Representa un ejemplo único y concreto de esa clase.
+        - Objeto: Instancia concreta de una clase, contiene datos específicos y puede ejecutar los comportamientos definidos en la clase.
+
+        Orden de creación:
+            1º Clase: Se define primero, es la plantilla base que describe atributos y comportamientos.
+            2º Constructor: Se implementa dentro de la clase para inicializar sus instancias.
+            3º Instancia: Se crea al ejecutar el constructor para dar lugar a un objeto.
+            4º Objeto: Es el resultado final, una entidad concreta que representa la clase con valores específicos.
 
 ------------------------------------------------------------------
