@@ -1,10 +1,13 @@
 void main() {
   
   final windPlant = WindPlant( initialEnergy: 100 );
+  final nuclearPlant = NuclearPlant( energyLeft: 1000);
   
   print(windPlant);
   
   print( 'wind: ${ chargePhone( windPlant )}');
+  print( 'nuclear: ${ chargePhone( nuclearPlant )}');
+  
   
 }
 
@@ -46,3 +49,23 @@ class WindPlant extends EnergyPlant {
   
   
 }
+
+
+class NuclearPlant implements EnergyPlant {
+  
+  
+  @override
+  double energyLeft;
+  
+  @override
+  PlantType type = PlantType.nuclear;
+  
+  NuclearPlant({ required this.energyLeft });
+  
+  @override
+  void consumeEnergy( double amount ){
+    energyLeft -= ( amount * 0.5);
+  }
+  
+}
+
